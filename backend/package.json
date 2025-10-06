@@ -7,8 +7,9 @@
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "start": "node dist/server.js",
-    "dev": "ts-node-dev --respawn --transpile-only src/server.ts",
-    "lint": "eslint \"src/**/*.{ts,tsx}\""
+    "dev": "ts-node-dev --esm --respawn --transpile-only src/server.ts",
+    "lint": "eslint \"src/**/*.{ts,tsx}\"",
+    "test": "echo \"No backend tests yet\" && exit 0"
   },
   "dependencies": {
     "express": "^4.19.2",

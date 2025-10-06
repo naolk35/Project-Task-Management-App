@@ -1,5 +1,7 @@
 # Project & Task Management App
 
+[![CI](https://github.com/naolk35/Project-Task-Management-App/actions/workflows/ci.yml/badge.svg)](https://github.com/naolk35/Project-Task-Management-App/actions/workflows/ci.yml)
+
 A monorepo-style workspace with a backend API and frontend client.
 
 ## Overview
