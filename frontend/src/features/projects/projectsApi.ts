@@ -1,5 +1,5 @@
-import { apiSlice } from "../../store/apiSlice.ts";
-import type { Project } from "../../types/index.ts";
+import { apiSlice } from "../../store/apiSlice";
+import type { Project } from "../../types";
 
 type CreateProjectDto = { title: string; description?: string };
 type UpdateProjectDto = { id: number; title?: string; description?: string };

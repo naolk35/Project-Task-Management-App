@@ -4,7 +4,7 @@ import {
   useCreateProjectMutation,
   useUpdateProjectMutation,
   useDeleteProjectMutation,
-} from "../features/projects/projectsApi.ts";
+} from "../features/projects/projectsApi";
 
 export default function ProjectsPage(): JSX.Element {
   const { data, isLoading, isError, refetch } = useGetProjectsQuery();

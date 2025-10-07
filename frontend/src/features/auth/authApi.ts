@@ -1,5 +1,5 @@
-import { apiSlice } from "../../store/apiSlice.ts";
-import type { User } from "../../types/index.ts";
+import { apiSlice } from "../../store/apiSlice";
+import type { User } from "../../types";
 
 interface LoginRequest {
   email: string;

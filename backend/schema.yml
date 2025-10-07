@@ -1,0 +1,32 @@
+# Simple YAML schema for MySQL via Sequelize raw queries
+# Adjust types to match your MySQL version and needs
+
+tables:
+  users:
+    columns:
+      id: "INT AUTO_INCREMENT PRIMARY KEY"
+      name: "VARCHAR(255) NOT NULL"
+      email: "VARCHAR(255) NOT NULL UNIQUE"
+      passwordHash: "VARCHAR(255) NOT NULL"
+      role: "ENUM('admin','manager','employee') NOT NULL DEFAULT 'employee'"
+      createdAt: "DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP"
+      updatedAt: "DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP"
+  projects:
+    columns:
+      id: "INT AUTO_INCREMENT PRIMARY KEY"
+      name: "VARCHAR(255) NOT NULL"
+      description: "TEXT"
+      ownerId: "INT NOT NULL"
+      createdAt: "DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP"
+      updatedAt: "DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP"
+  tasks:
+    columns:
+      id: "INT AUTO_INCREMENT PRIMARY KEY"
+      title: "VARCHAR(255) NOT NULL"
+      description: "TEXT"
+      status: "ENUM('todo','in_progress','done') NOT NULL DEFAULT 'todo'"
+      projectId: "INT NOT NULL"
+      assigneeId: "INT"
+      createdAt: "DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP"
+      updatedAt: "DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP"
+

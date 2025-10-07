@@ -1,12 +1,12 @@
 import React from "react";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
-import LoginPage from "./pages/LoginPage.tsx";
-import AdminDashboard from "./pages/AdminDashboard.tsx";
-import ManagerDashboard from "./pages/ManagerDashboard.tsx";
-import EmployeeDashboard from "./pages/EmployeeDashboard.tsx";
-import ProjectsPage from "./pages/ProjectsPage.tsx";
-import TasksPage from "./pages/TasksPage.tsx";
-import ThemeToggle from "./components/ThemeToggle.tsx";
+import LoginPage from "./pages/LoginPage";
+import AdminDashboard from "./pages/AdminDashboard";
+import ManagerDashboard from "./pages/ManagerDashboard";
+import EmployeeDashboard from "./pages/EmployeeDashboard";
+import ProjectsPage from "./pages/ProjectsPage";
+import TasksPage from "./pages/TasksPage";
+import ThemeToggle from "./components/ThemeToggle";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 

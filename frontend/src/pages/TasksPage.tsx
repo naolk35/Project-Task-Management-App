@@ -4,8 +4,8 @@ import {
   useCreateTaskMutation,
   useUpdateTaskMutation,
   useDeleteTaskMutation,
-} from "../features/tasks/tasksApi.ts";
-import type { TaskStatus } from "../types/index.ts";
+} from "../features/tasks/tasksApi";
+import type { TaskStatus } from "../types";
 
 const statuses: TaskStatus[] = ["todo", "in_progress", "done"];
 

@@ -1,5 +1,5 @@
-import { apiSlice } from "../../store/apiSlice.ts";
-import type { Task, TaskStatus } from "../../types/index.ts";
+import { apiSlice } from "../../store/apiSlice";
+import type { Task, TaskStatus } from "../../types";
 
 type CreateTaskDto = {
   title: string;

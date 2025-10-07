@@ -38,6 +38,8 @@ DB_NAME=app_db
 DB_USER=root
 DB_PASSWORD=
 # Or use DATABASE_URL=mysql://user:pass@host:3306/db
+# Optional: schema file for YAML migrations
+SCHEMA_FILE=./backend/schema.yml
 ```
 
 2. Install and run:
@@ -48,12 +50,24 @@ npm install
 npm run dev
 ```
 
+Run YAML schema migration:
+
+```
+npm run migrate --prefix backend
+```
+
 ### Frontend
 
 ```
 cd frontend
 npm install
 npm run dev
+```
+
+Optionally create `frontend/.env`:
+
+```
+VITE_API_BASE_URL=http://localhost:4000/api
 ```
 
 ### Docker (Compose)
@@ -72,7 +86,8 @@ Services:
 
 ## Scripts
 
-- Backend: `npm run dev`, `npm run build`, `npm start`
+- Root: `npm start` (runs frontend and backend concurrently), `npm run migrate`
+- Backend: `npm run dev`, `npm run build`, `npm start`, `npm run migrate`
 - Frontend: `npm run dev`, `npm run build`, `npm run preview`
 
 ## API

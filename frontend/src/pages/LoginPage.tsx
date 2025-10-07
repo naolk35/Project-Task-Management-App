@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useLoginMutation } from "../features/auth/authApi.ts";
+import { useLoginMutation } from "../features/auth/authApi";
 import { toast } from "react-toastify";
 
 export default function LoginPage(): JSX.Element {
